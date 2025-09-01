@@ -5,7 +5,7 @@ This JavaFX project is a simple GUI-based application that helps users explore p
 ---
 
 ## 🚀 Features
-- 🎨 Modern UI with **custom CSS styling** (`style.css`)
+- 🎨  UI with **custom CSS styling** (`style.css`)
 - 🐕 Browse different pets with details like:
   - Description
   - Activity level
@@ -22,5 +22,35 @@ This JavaFX project is a simple GUI-based application that helps users explore p
 ---
 
 ## 📸 Screenshot  
-```markdown
+
 ![App screenshot](screenshot.png)
+
+
+## 🧑‍💻 Code Examples
+
+### Pet Class
+Each pet has a name, description, activity level, child-friendliness, and an image path.
+
+```
+class Pet {
+    private final String name;
+    private final String description;
+    private final int activityLevel;
+    private final boolean goodWithKids;
+    private final String imagePath;
+
+    public Pet(String name, String description, int activityLevel, boolean goodWithKids, String imagePath) {
+        this.name = name;
+        this.description = description;
+        this.activityLevel = activityLevel;
+        this.goodWithKids = goodWithKids;
+        this.imagePath = imagePath;
+    }
+
+    public String getInfo() {
+        return name + " :\n" + description +
+                "\nActivity Level: " + activityLevel +
+                "\nGood with kids: " + (goodWithKids ? "Yes" : "No");
+    }
+}
+```
