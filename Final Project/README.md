@@ -23,4 +23,4 @@ This JavaFX project is a simple GUI-based application that helps users explore p
 
 ## 📸 Screenshot  
 ```markdown
-![App Screenshot](screenshot.png)
+![App screenshot](screenshot.png)
