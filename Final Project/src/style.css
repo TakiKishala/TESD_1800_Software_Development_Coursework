@@ -1,0 +1,103 @@
+/* General Styles */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-image: url("/images/background3.png");
+    -fx-background-repeat: repeat;   /* or no-repeat */
+    -fx-background-size: cover;      /* cover fills the window */
+    -fx-background-position: center;
+}
+
+/* Titles and Labels */
+.title-label {
+    -fx-font-size: 45px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 10px 0 20px 0;
+}
+
+.section-label {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 10px 0 10px 0;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.button:pressed {
+    -fx-background-color: #004085;
+}
+
+/* Combo Box */
+.combo-box {
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #333333;
+    -fx-background-color: #ffffff;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #e9e9e9;
+}
+
+/* Text Area */
+.text-area {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+    -fx-control-inner-background: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .content {
+    -fx-background-color: transparent;
+}
+
+/* Panes and Layouts */
+.vbox, .grid-pane, .hbox {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+.menu-layout {
+    -fx-background-color: #e0f2f7; /* Light blue background for menu */
+
+
+}
+
+.pref-layout {
+    -fx-background-color: #f7f2e0; /* Light yellow background for preferences */
+}
+
+.rec-layout {
+    -fx-background-color: #e0f7e0; /* Light green background for recommendations */
+}
